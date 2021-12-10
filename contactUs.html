@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ContactUs</title>
+</head>
+<header>
+    <h1></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">معرفی</a></li>
+            <li><a href="Skills.html">مهارت ها و تواندمندی ها</a></li>
+            <li><a href="Honors.html">افتخارات و دستاوردها</a></li>
+            <li><a href="contactUs.html">تماس با ما</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body dir="rtl">
+    <div class="contact">
+        <h2>لطفا فرم زیر را پر کنید:</h2>
+
+        <form>
+            <label for="fname">نام:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <h2>جنسیت</h2>
+            <input type="radio" id="Male" name="gender" value="male">
+            <label for="male">مرد</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">زن</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">سایر</label><br>
+            <label for="email">ایمیل:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="text">نظر شما درباره ی این صفحه:</label><br>
+            <textarea rows="10" cols="100" type="text" id="text" name="text"></textarea><br>
+
+            <button id="submit" type="submit" value="submit">ارسال</button>
+
+    </div>
+</body>
+<footer>
+    <div class="footer-content">
+        <h3>Mohammadmahdi Mirzaei</h3>
+        <h4>Mobile = +989336161887 </h4>
+        <h4>Email = Mirzaeimahdi409@gmail.com </h4>
+        <h4><a href="https://github.com/mirzaeimahdi409">github</a> </h4>
+        <h4><a href="https://stackoverflow.com/users/17521293/mohammadmahdi-mirzaei">stackoverflow</a> </h4>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/mohammadmahdi.mirzaei.165"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/Mr_mahdimirzaei"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mohammadmahdi-mirzaei-7673a519a/"><i
+                        class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+</footer>
+<Script>
+    document.getElementById("submit").onclick = function () {
+        if (confirm('Are you sure you want to save this thing into the database?')) {
+            // Save it!
+            alert('saved')
+        } else {
+            // Do nothing!
+            alert('not saved');
+        }
+    }
+</Script>
+
+</html>
